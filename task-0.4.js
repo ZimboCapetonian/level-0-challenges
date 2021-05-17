@@ -1,0 +1,3 @@
+function evenOrOdd() {
+	console.log(
+}
