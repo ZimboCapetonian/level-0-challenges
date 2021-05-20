@@ -60,8 +60,17 @@ function findSharedLetters(string1, string2) {
         console.log(printVowels("Apples Suck", "Oranges also"));
         console.log(printVowels("This was hard"));*/
 
-        function commonChars(A) {
-            const [first, ...rest] = A.sort((a,b) => -(a.length - b.length));
+function commonChars(string1, string2) {
+  var string1 = "";
+  var string2 = "";
+  
+  var result1 = string1.includes(/'aeiouAEIOU/g);
+  var result2 = string2.includes(result1);
+  
+  return result();
+}
+  
+            /*const [first, ...rest] = A.sort((a,b) => -(a.length - b.length));
             const duplicates = [];
             [...first].forEach(e => {
               let isDuplicate = true;
@@ -79,9 +88,9 @@ function findSharedLetters(string1, string2) {
                 duplicates.push(e);
               }
             });
-            return duplicates;
-          }
+            return duplicates;*/
+
+
           
-          const arr = ["Apples Suck", "Oranges also"
-        ];
-          console.log(commonChars(arr));
+          
+console.log(commonChars("Apples Suck", "Oranges also"));
