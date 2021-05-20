@@ -1,13 +1,6 @@
 function maximum(a, b, c) {
-    max = 0;
-    if (a > b) {
-        max = a;
-    } else {
-        max = b;
-    }
-    if (c > max) {
-        max = c;
-    }
+    max = Math.max(a, b, c);
+    
     return max;
 }
 
