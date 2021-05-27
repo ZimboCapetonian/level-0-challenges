@@ -1,10 +1,11 @@
 function minutesToHours(d) {
     var digit = d;
-    var hours = (digit / 60);
-    var remHours = Math.floor(hours);
-    var minutes = (hours - remHours) * 60;
-    var remMinutes = Math.round(minutes);
-    return digit + " will become " + remHours + " hours, " + remMinutes + " minutes.";
+    var remainderOfH = digit % 60;
+    var hours = (digit / 60) - remainderOfH ;
+    
+    var minutes = (hours - remainderOfH) * 60;
+    var amountOfM = Math.round(minutes);
+    return digit + " will become " + hours + " hours, " + amountOfM + " minutes.";
 
 }
 

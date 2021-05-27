@@ -1,6 +1,7 @@
-function printVowels(string) {
-    return  string.match(/[aeiouAEIOU]/ig, '');
-    }
+function printVowels(str){
+  var matches = str.match(/[aeiouAEIOU]/gi);
+   return matches;
 
-    console.log(printVowels("Apples Suck"));
-    console.log(printVowels("This was hard"));
+}
+
+ console.log(printVowels("Apples"))
