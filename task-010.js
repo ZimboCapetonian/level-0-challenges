@@ -1,27 +1,25 @@
-/*function printCommonLetters(str1, str2) {
-  let output = str1.match(str2);
-  return output;
+let MAX_CHAR = 26;
+function findCommonChars(str1, str2) {
+  let arr1 = new Array(MAX_CHAR);
+  let arr2 = new Array(MAX_CHAR);
+  for (let i = 0; i < MAX_CHAR; i++) {
+    arr1[i] = 0;
+    arr2[i] = 0;
+   }
+   let length1 = str1.length;
+   let length2 = str2.length;
+
+   for (let i = 0; i < length1; i++)
+   arr1[str1[i].charCodeAt(0) - 'a'.charCodeAt(0)] += 1;
+
+   for (let i = 0; i < length2; i++)
+   arr2[str2[i].charCodeAt(0) - 'a'.charCodeAt(0)] += 1;
+   for (let i = 0; i <MAX_CHAR; i++) {
+     if (arr1[i] !== 0 && arr2[i] !== 0) {
+       for (let j = 0; j < Math.min(arr1[i], arr2[i]); j++)
+       console.log((String.fromCharCode(i + 'a'.charCodeAt(0))));
+     }
+   }
 }
-
-function commonChars(a, b) {
-  
-  for (var i = 0; i < a.length; i++) {
-    for (var j = 0; j < b.length; j++) {
-      if (a[i] == b[j]) {
-        var result = a[i];
-        return result;
-      }
-    }
-  }
-  return result2;
-}*/
-
-function printCommLett(string1, string2) {
-  let result2 = string2.includes(string1);
-  return result2;
-}
-
-
-//console.log(printCommonLetters("Apples Suck", "Oranges also");
-//console.log(commonChars("Apples Suck", "Oranges also");
-console.log(printCommLett("Apples Suck", "Oranges also"));
+let str1 = "apples", str2 = "arsenal";
+findCommonChars(str1, str2);
