@@ -7,7 +7,9 @@ function findCommon(str1, str2) {
       }
     }
   }
-  return Array.from(new Set(resultStr)).join("");
+  let commLetters = Array.from(new Set(resultStr)).join(", ");
+  let printOut = "Common letters: " + commLetters;
+  console.log(printOut);
 }
 
-console.log(findCommon("Algea", "Reality"));
+findCommon("Algea", "Reality");
