@@ -7,7 +7,9 @@ function findVowels(str) {
       
     }
   }
-  console.log(Array.from(new Set(vowels)).join(""));
+  let result = Array.from(new Set(vowels)).join("");
+  let printOut = "Vowels: " + result;
+  console.log(printOut);
 }
 
 findVowels("Apples");
